@@ -10,13 +10,16 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="add.php">Add Movie</a>
+          <a class="nav-link" href="addmovie.php">Add Movie</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="addStudent.php">Add Student</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"  href="logout.php">Logout</a>
+        </li>
+        <li>
+          <a class="nav-link" href="admin.php">admin page</a>
         </li>
       </ul>
     </div>
