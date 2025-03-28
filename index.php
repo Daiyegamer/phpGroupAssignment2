@@ -6,6 +6,8 @@
     <title>Frontend</title>
 </head>
 <body>
+<?php include('admin/reusable/nav.php'); ?>
+
     <h1>This is frontEnd</h1>
 
     <a href="http://localhost/HTTP5225/week8/admin">Login</a>
