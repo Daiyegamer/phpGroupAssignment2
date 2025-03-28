@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2025 at 04:09 PM
+-- Generation Time: Mar 28, 2025 at 05:59 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -55,7 +55,8 @@ INSERT INTO `movies` (`id`, `title`, `genre`, `release_year`, `network`, `cast`,
 (9, 'Rebel Ridge', 'Action, Thriller', 2024, 'Netflix', 'Aaron Pierre, AnnaSophia Robb', 'A former Marine grapples his way through a web of small-town corruption when an attempt to post bail for his cousin escalates into a violent standoff with the local police chief.', 6.8, 'url9.jpg'),
 (10, 'men in black', 'Action, Sci-fi', 1997, 'Netflix', 'Tommy Lee Jones, Will Smith', 'James, an NYC cop, is hired by Agent K of a secret government agency that monitors extraterrestrial life on Earth. Together, they must recover an item that has been stolen by an intergalactic villain.', 7.3, 'url10.jpg'),
 (11, 'Titanic', 'Romance, Adventure', 1997, 'Netflix', 'Kate Winslet, Leonardo DiCaprio', 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.', 7.9, 'url11.jpg'),
-(12, 'The Aviator', 'Adventure, Drama', 2004, 'Netflix', 'Leonardo DiCaprio, Cate Blanchett', 'A biopic depicting the early years of legendary director and aviator Howard Hughes career from the late 1920s to the mid 1940s.', 7.5, 'url12.jpg');
+(12, 'The Aviator', 'Adventure, Drama', 2004, 'Netflix', 'Leonardo DiCaprio, Cate Blanchett', 'A biopic depicting the early years of legendary director and aviator Howard Hughes career from the late 1920s to the mid 1940s.', 7.5, 'url12.jpg'),
+(13, 'Jurrasic Park', 'Action, Adventure, Sci-fi', 1994, 'Netflix', 'Laura Dern, Sam Neill', 'An industrialist invites some experts to visit his theme park of cloned dinosaurs. After a power failure, the creatures run loose, putting everyones lives, including his grandchildrens, in danger.', 8.0, 'uploads/Screenshot (1109).png');
 
 -- --------------------------------------------------------
 
@@ -100,6 +101,26 @@ INSERT INTO `reviews` (`id`, `movie_id`, `user_name`, `review_text`, `rating`) V
 (22, 11, 'Tina', 'The movie is a Rollercoaster of emotions the movie is remarkably broken into three acts the first act is a nice way to hook the person into watching by reaviling that the ship sinks the opening scene is incredible.  The second act is an incredible excucuted love story of rose and Jack as we time travel back to 1912 the ship looks amazing still after 25 years.', 4.9),
 (23, 12, 'Steve', 'Yes. This is what we want to see a biopic like. Howard Hughes was a mysophobic man who is mental health grew worse every year for no treatment,  but he was desperate about his work. He wanted Hell’s Angels to be perfect. To be the best film ever made in American Film Industry. ', 5.0),
 (24, 12, 'Peter', 'One of my favourite film. It is inspirational too. It is because of Leonardo DiCaprios exceptional acting. The voice, the acting. ', 4.8);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `movies`
+--
+ALTER TABLE `movies`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `movies`
+--
+ALTER TABLE `movies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
